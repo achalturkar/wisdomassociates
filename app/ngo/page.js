@@ -3,6 +3,23 @@ import { motion } from 'framer-motion'
 import { FaHeart, FaHandsHelping, FaSeedling, FaGraduationCap, FaUsers, FaCheckCircle, FaImages } from 'react-icons/fa'
 import SectionHeading from '@/components/site/SectionHeading'
 import CTA from '@/components/home/CTA'
+import Head from 'next/head'
+
+<Head>
+<title>NGO Support & Social Development | Wisdom Associates</title>
+
+<meta
+name="description"
+content="Wisdom Associates supports NGOs and social development initiatives through awareness programs and skill development."
+/>
+
+<meta
+name="keywords"
+content="NGO Support, Social Development, CSR Activities, Community Development"
+/>
+
+<link rel="canonical" href="https://wisdomassociates.com/ngo"/>
+</Head>
 
 const ngoActivities = [
   { icon: FaGraduationCap, title: 'Skill Development for Youth', desc: 'Free vocational training programs for underprivileged youth in Nagpur region, equipping them with employable skills for sustainable livelihoods.', color: 'from-green-500 to-teal-400' },

@@ -3,13 +3,30 @@ import { motion } from 'framer-motion'
 import { FaBriefcase, FaMapMarkerAlt, FaClock, FaArrowRight, FaEnvelope } from 'react-icons/fa'
 import SectionHeading from '@/components/site/SectionHeading'
 import CTA from '@/components/home/CTA'
+import Head from 'next/head'
+<Head>
+<title>Careers | Wisdom Associates</title>
 
+<meta
+name="description"
+content="Join Wisdom Associates and explore opportunities in HR consultancy, safety and training."
+/>
+
+<meta
+name="keywords"
+content="Jobs, Careers, HR Jobs, Safety Jobs, Training Careers"
+/>
+
+<link rel="canonical" href="https://wisdomassociates.com/careers"/>
+</Head>
 const openings = [
   { title: 'HR Consultant', location: 'Nagpur, MH', type: 'Full-time', dept: 'Consulting', desc: 'Looking for an experienced HR consultant to handle client advisory, policy design, and HR operations management.' },
   { title: 'Industrial Safety Officer', location: 'Nagpur, MH', type: 'Full-time', dept: 'Safety', desc: 'Certified safety professional for conducting workplace audits, risk assessments, and compliance advisory for industrial clients.' },
   { title: 'Corporate Trainer', location: 'Nagpur / Pan-India', type: 'Full-time', dept: 'Training', desc: 'Passionate trainer to design and deliver leadership, soft skills, and compliance training programs across industries.' },
   { title: 'Labour Law Consultant', location: 'Nagpur, MH', type: 'Full-time', dept: 'Compliance', desc: 'Expert in Indian labour laws to provide advisory on IR, compliance, grievance handling, and statutory requirements.' },
 ]
+
+
 
 export default function CareersPage() {
   return (

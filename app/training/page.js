@@ -3,6 +3,9 @@ import { motion } from 'framer-motion'
 import { FaGraduationCap, FaCheckCircle, FaUsers, FaLightbulb, FaChartLine } from 'react-icons/fa'
 import SectionHeading from '@/components/site/SectionHeading'
 import CTA from '@/components/home/CTA'
+import Head from 'next/head'
+
+
 
 const trainingTopics = [
   'Work Ethics & Work Culture', 'Change Management', 'Time Management', 'Managerial Effectiveness',
@@ -27,9 +30,34 @@ const programs = [
   { icon: FaChartLine, title: 'Customized Training Modules', desc: 'Bespoke training designed around your organization\'s specific challenges, goals, and workforce profile.', audience: 'All Levels' },
 ]
 
+// export const metadata = {
+//   title: "Training Programs",
+//   description:
+//     "Professional industrial safety and corporate training programs for organizations and individuals.",
+
+//   alternates: {
+//     canonical: "https://wisdomassociates.com/training",
+//   },
+// };
+
 export default function TrainingPage() {
   return (
     <>
+    <Head>
+<title>Training Programs | Wisdom Associates</title>
+
+<meta
+name="description"
+content="Professional industrial safety and corporate training programs designed to enhance workforce productivity."
+/>
+
+<meta
+name="keywords"
+content="Corporate Training, Safety Training, Leadership Development, Behavioral Training"
+/>
+
+<link rel="canonical" href="https://wisdomassociates.com/training"/>
+</Head>
       <section className="relative py-20 bg-gradient-to-b from-green-50 via-teal-50 to-white">
         <div className="absolute inset-0 hero-grid-pattern opacity-50"></div>
         <div className="relative max-w-7xl mx-auto px-5 lg:px-8 text-center">

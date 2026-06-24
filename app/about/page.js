@@ -5,6 +5,8 @@ import SectionHeading from '@/components/site/SectionHeading'
 import CTA from '@/components/home/CTA'
 import Stats from '@/components/home/Stats'
 import Team from '@/components/home/Team'
+import Head from 'next/head'
+
 
 const values = [
   { icon: FaBullseye, title: 'Our Mission', desc: 'Provide expert HR, IR, CSR and safety consultancy aligned with organizational goals. Design and deliver impactful training programs that strengthen leadership, communication, and workforce capability. Promote workplace safety culture through audits, advisory, and awareness initiatives.' },
@@ -12,9 +14,27 @@ const values = [
   { icon: FaHeart, title: 'Our Values', desc: 'Integrity. Excellence. Empathy. Result-Orientation. We partner with clients to transform challenges into opportunities, ensuring measurable outcomes and long-term organizational success.' },
 ]
 
+
+
 export default function AboutPage() {
   return (
     <>
+    <Head>
+<title>About Us | Wisdom Associates</title>
+
+<meta
+name="description"
+content="Learn about Wisdom Associates and our expertise in HR consultancy, industrial safety and training services."
+/>
+
+<meta
+name="keywords"
+content="About Wisdom Associates, HR Experts, Safety Consultants, Training Services"
+/>
+
+<link rel="canonical" href="https://wisdomassociates.com/about"/>
+</Head>
+
       <section className="relative py-20 bg-gradient-to-b from-orange-50 via-amber-50 to-white">
         <div className="absolute inset-0 hero-grid-pattern opacity-50"></div>
         <div className="relative max-w-7xl mx-auto px-5 lg:px-8 text-center">

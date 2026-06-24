@@ -3,6 +3,23 @@ import { motion } from 'framer-motion'
 import { FaUsersCog, FaHandshake, FaIndustry, FaShieldAlt, FaGraduationCap, FaCogs, FaCheckCircle } from 'react-icons/fa'
 import SectionHeading from '@/components/site/SectionHeading'
 import CTA from '@/components/home/CTA'
+import Head from 'next/head'
+
+<Head>
+<title>Our Services | Wisdom Associates</title>
+
+<meta
+name="description"
+content="Explore HR consultancy, industrial safety, statutory compliance and workforce development services."
+/>
+
+<meta
+name="keywords"
+content="HR Services, Industrial Safety, Labour Law Compliance, Payroll, Recruitment"
+/>
+
+<link rel="canonical" href="https://wisdomassociates.com/services"/>
+</Head>
 
 const services = [
   {
@@ -36,6 +53,7 @@ const services = [
     bullets: ['TPM Implementation & Training', 'ISO 9001 QMS Certification Support', 'Kaizen, Lean & Six Sigma', 'Process Standardization', 'Continuous Improvement Culture'],
   },
 ]
+
 
 export default function ServicesPage() {
   return (
