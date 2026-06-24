@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wisdomassociates.com/sitemap.xml
+Host: https://wisdomassociates.com
